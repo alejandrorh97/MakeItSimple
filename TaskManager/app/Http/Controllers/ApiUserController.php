@@ -17,7 +17,6 @@ class ApiUserController extends Controller
     public function index($id)
     {
         // get all users
-        error_log($id);
         $users = User::all();
         return $users;
     }
